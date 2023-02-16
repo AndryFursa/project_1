@@ -1,7 +1,6 @@
 import './App.css'
-import Me from '../me/Me'
+import Me from '../Me/Me'
 import Data from '../../data/Data'
-import Button from '../Button/Button'
 
 // function changeTextButton(text) {
 //   const newTextButton = text + '12'
@@ -10,13 +9,11 @@ import Button from '../Button/Button'
 // console.log(changeTextButton)
 
 function App() {
-  const { name, years } = Data
+  const { name, years, textButton } = Data
   return (
     <div className="App">
-      <Me name={name} years={years} />
-      <Button />
-      <Button />
-      <Button />
+      <Me name={name} years={years} textButton={textButton} />
+
       <header className="App-header"></header>
     </div>
   )
